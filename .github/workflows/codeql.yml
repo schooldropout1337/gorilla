@@ -92,4 +92,4 @@ jobs:
         category: "/language:${{matrix.language}}"
 
     - name: "Gorilla Audit"
-      uses: ./cwe-22-gorilla-session.ql
+      uses: cwe-22-gorilla-session.ql
