@@ -10,6 +10,8 @@ go run escapezoo.go
 
 # Path Directory Traversal
 
+# CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal').
+
 ```
 curl --cookie "zoo=$PREFIX/tmp" http://localhost:8080
 ```
