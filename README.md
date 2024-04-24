@@ -45,3 +45,19 @@ if ( os_IsNotExist(fmta._r2) )
 ```
 
 https://labs.watchtowr.com/palo-alto-putting-the-protecc-in-globalprotect-cve-2024-3400/
+
+# A Justification on SESSID implemented on Palo Alto
+
+```
+A PSA since there's some confusion on this...
+
+There is no vulnerability in Gorilla Sessions.
+
+The vulnerability is in Palo Alto's internal SessDiskStore, which looks similar to FilesystemStore. Early analysis came to the mistaken conclusion that the vulnerable path was in FilesystemStore, but it's not. FilesystemStore authenticates the Session.ID with securecookie, SessDiskStore does not.
+
+Hypothetically, if an application went out of their way to misuse FilesystemStore by not using its New API and stuffing attacker-controlled data in Session.ID (which is documented as not being safe), they could hit this.
+
+That's *not* what happened to Palo Alto. They wrote their own Store that takes the session ID from a cookie in New without authentication.
+```
+
+https://abyssdomain.expert/@filippo/112289039356637058
