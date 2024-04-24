@@ -23,7 +23,7 @@ curl --cookie "zoo=$HOME/" http://localhost:8080
 ```
 if ( os_IsNotExist(fmta._r2) )
       {
-        store_8b = (``github_com_gorilla_sessions_Store_0)``net_http__ptr_Request_Context(r);
+        store_8b = (github_com_gorilla_sessions_Store_0)net_http__ptr_Request_Context(r);
         ctxb = store_8b.tab;
         v52 = runtime_convTstring((string)s->path);
         v6 = (_1_interface_ *)runtime_newobject((runtime__type_0 *)&RTYPE__1_interface_);
