@@ -44,4 +44,4 @@ if ( os_IsNotExist(fmta._r2) )
         err_1 = os_MkdirAll((string)s->path, 0644u);
 ```
 
-[https://labs.watchtowr.com/palo-alto-putting-the-protecc-in-globalprotect-cve-2024-3400/]
+https://labs.watchtowr.com/palo-alto-putting-the-protecc-in-globalprotect-cve-2024-3400/
