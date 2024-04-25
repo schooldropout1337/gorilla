@@ -10,6 +10,10 @@ Gorilla Guard is a security tool designed to enhance the security of web applica
 
 ![Gorilla Guard Scan](https://github.com/schooldropout1337/gorilla/blob/main/gorillaguard-poc.jpg)
 
+# Scan, Exploit & Report
+
+https://github.com/search?q=sessions.NewFilesystemStore+language%3Ago+&type=code
+
 
 # A Gorilla Session Vulnerable to Path Directory Traversal
 
