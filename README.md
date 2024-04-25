@@ -1,3 +1,7 @@
+# Gorilla Guard
+
+Gorilla Guard is a security tool designed to enhance the security of web applications built using the Gorilla Sessions library by detecting and preventing potential path traversal vulnerabilities. It specifically targets Common Weakness Enumeration (CWE) number 22, which relates to improper handling of input data that may lead to path traversal attacks.
+
 # A Gorilla Session Vulnerable to Path Directory Traversal
 
 ```
